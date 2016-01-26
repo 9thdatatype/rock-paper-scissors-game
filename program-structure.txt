@@ -1,0 +1,49 @@
+Last Revision: 2016-01-05
+
+// This is a stub for our future design guideline and program structure
+// This file only exists in the "pseudocode" branch of the project, not on the main
+// Once we've all agreed on the contents of this file, we'll format it and push it to the main branch.
+
+// Things like className_X or methodName_Y are placeholders and can be edited at will for a suggestion
+
+// Insert Legends Here!
+// (s) - static
+// (f) - final
+
+< className_X > // Dan
+- Handles the user input
+- Instructs the user how to input data
+- Validates the user input data
+// Use ints 
+// Use this space to write the UML for the class
+
+< DeepBlues > // Murilo
+- Generates the program's choice between 'Rock', 'Paper' or 'Scissors'
+// Driver class also availble
+----------------------------------------
+DeepBlues 
+----------------------------------------
++ (s)(f) ROCK : int
++ (s)(f) PAPER : int
++ (s)(f) SCISSOR : int
++ (s)(f) RPS_ARRAY : String[]
++ (s)(f) LOWEST_ROLL : int
++ (s)(f) HIGHEST_ROLL : int
++ (s)(f) ROLL_RANGE : int
+----------------------------------------
++ (s) getChoice() : int
+----------------------------------------
+
+< rockPaperScissorsMain > // Jonathan
+- Handles the main game logic
+- Intructs the user on how to play
+- Evaluates winner
+- Informs user of the winner
+----------------------------------------
+rockPaperScissorsMain
+----------------------------------------
++ (s) deepBlues : DeepBlues
++ (s) className_X : className_X
+----------------------------------------
++ (s) main : void
+----------------------------------------
