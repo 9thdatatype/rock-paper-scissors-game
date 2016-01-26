@@ -18,7 +18,13 @@ public class RockPaperScissorsMain {
 		
 		if(player2 == 0)
 			return;
-		
+		else if(player2 == 1)
+			System.out.println("The computer choose rock.");
+		else if(player2 == 2)
+			System.out.println("The computer choose paper.");
+		else
+			System.out.println("The computer choose scissors.");
+
 		if(winner(player1, player2) == 0)
 			System.out.println("It's a tie");
 		else if(winner(player1, player2) == 1)
