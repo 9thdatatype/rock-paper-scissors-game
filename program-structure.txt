@@ -46,4 +46,5 @@ rockPaperScissorsMain
 + (s) className_X : className_X
 ----------------------------------------
 + (s) main : void
++ (s) winner : int
 ----------------------------------------
