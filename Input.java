@@ -32,12 +32,13 @@ public class Input {
 		while(!valid){
 			
 			rawInput = input.nextLine().toUpperCase();
-			System.out.println(rawInput);
+			//System.out.println(rawInput);
 			
 			//checks to see if a number is inputed
 			try {
 				refinedInput = Integer.parseInt(rawInput);
 				valid = true;
+				break;
 				// if a number is inputed  exits loop and returns number
 			} catch (NumberFormatException e) {
 				//e.printStackTrace();
