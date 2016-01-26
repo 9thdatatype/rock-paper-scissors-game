@@ -30,7 +30,9 @@ public class Input {
 		int loopCount = 0; //used to prevent infinate looping
 		
 		while(!valid){
+			
 			rawInput = input.nextLine().toUpperCase();
+			System.out.println(rawInput);
 			
 			//checks to see if a number is inputed
 			try {
