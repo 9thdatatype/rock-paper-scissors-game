@@ -1,6 +1,3 @@
-import Input;
-import DeepBlues;
-
 public class RockPaperScissorsMain {
 	
 	DeepBlues deepBlues = new DeepBlues();
