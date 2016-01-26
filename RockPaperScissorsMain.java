@@ -1,7 +1,7 @@
 public class RockPaperScissorsMain {
 	
-	DeepBlues deepBlues = new DeepBlues();
-	Input input = new Input();
+	static DeepBlues deepBlues = new DeepBlues();
+	static Input input = new Input();
 	
 	public static void main(String args[]){
 		int player1 = 0;
@@ -17,11 +17,11 @@ public class RockPaperScissorsMain {
 		player2 = deepBlues.getChoice();
 		
 		if(player2 == 0)
-			return 0;
+			return;
 		
-		if(winner == 0)
+		if(winner(player1, player2) == 0)
 			System.out.println("It's a tie");
-		else if(winner == 1)
+		else if(winner(player1, player2) == 1)
 			input.win();
 		else
 			input.loose();
@@ -56,5 +56,7 @@ public class RockPaperScissorsMain {
 		else if (p1 == 3 && p2 == 3){ // scissors and scissors
 			return 0;
 		}
+		else
+			return 3;
 	}
 }
